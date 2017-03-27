@@ -1,0 +1,16 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int oblicz (int n){
+	if (n==1)return 4;
+	return oblicz(n-1)+2;
+}
+
+int main(int argc, char** argv) {
+	int n;
+	cout << "Podaj n: ";
+	cin >> n;
+	cout << "Dla n rownego: "<<n<<" to: "<<oblicz(n)<<endl;
+	return 0;
+}
